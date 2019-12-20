@@ -95,9 +95,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TodoREST\TodoREST.csproj">
-      <Project>{05a1af58-41e1-4ffd-bb93-e8ba58be5646}</Project>
-      <Name>TodoREST</Name>
+    <ProjectReference Include="..\TodoREST.Library\TodoREST.Library.NETStandard.2.0\TodoREST.Library.NETStandard.2.0.csproj">
+      <Project>{98e57c60-4958-462c-a90d-724a5a322d6b}</Project>
+      <Name>TodoREST.Library.NETStandard.2.0</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

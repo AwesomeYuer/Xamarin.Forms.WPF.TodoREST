@@ -36,7 +36,8 @@
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\iPhone\Release</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
@@ -47,44 +48,75 @@
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <PlatformTarget>anycpu</PlatformTarget>
     <ExternalConsole>false</ExternalConsole>
-    <Commandlineparameters></Commandlineparameters>
+    <Commandlineparameters>
+    </Commandlineparameters>
     <RunWithWarnings>true</RunWithWarnings>
-    <CodesignProvision></CodesignProvision>
-    <CodesignExtraArgs></CodesignExtraArgs>
-    <DeviceSpecificBuild></DeviceSpecificBuild>
-    <MtouchDebug></MtouchDebug>
-    <MtouchNoSymbolStrip></MtouchNoSymbolStrip>
-    <IOSDebugOverWiFi></IOSDebugOverWiFi>
-    <MtouchFastDev></MtouchFastDev>
-    <MtouchProfiling></MtouchProfiling>
-    <MtouchExtraArgs></MtouchExtraArgs>
-    <MtouchVerbosity></MtouchVerbosity>
-    <MtouchUseLlvm></MtouchUseLlvm>
-    <MtouchUseThumb></MtouchUseThumb>
-    <MtouchFloat32></MtouchFloat32>
-    <MtouchEnableBitcode></MtouchEnableBitcode>
-    <MtouchEnableSGenConc></MtouchEnableSGenConc>
-    <BuildIpa></BuildIpa>
-    <IpaIncludeArtwork></IpaIncludeArtwork>
-    <IpaMetadata></IpaMetadata>
-    <IpaPackageName></IpaPackageName>
-    <CrashReportingApiKey></CrashReportingApiKey>
+    <CodesignProvision>
+    </CodesignProvision>
+    <CodesignExtraArgs>
+    </CodesignExtraArgs>
+    <DeviceSpecificBuild>
+    </DeviceSpecificBuild>
+    <MtouchDebug>
+    </MtouchDebug>
+    <MtouchNoSymbolStrip>
+    </MtouchNoSymbolStrip>
+    <IOSDebugOverWiFi>
+    </IOSDebugOverWiFi>
+    <MtouchFastDev>
+    </MtouchFastDev>
+    <MtouchProfiling>
+    </MtouchProfiling>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
+    <MtouchVerbosity>
+    </MtouchVerbosity>
+    <MtouchUseLlvm>
+    </MtouchUseLlvm>
+    <MtouchUseThumb>
+    </MtouchUseThumb>
+    <MtouchFloat32>
+    </MtouchFloat32>
+    <MtouchEnableBitcode>
+    </MtouchEnableBitcode>
+    <MtouchEnableSGenConc>
+    </MtouchEnableSGenConc>
+    <BuildIpa>
+    </BuildIpa>
+    <IpaIncludeArtwork>
+    </IpaIncludeArtwork>
+    <IpaMetadata>
+    </IpaMetadata>
+    <IpaPackageName>
+    </IpaPackageName>
+    <CrashReportingApiKey>
+    </CrashReportingApiKey>
     <CrashReportingEnabled>false</CrashReportingEnabled>
-    <CodesignResourceRules></CodesignResourceRules>
-    <IOSDebuggerPort></IOSDebuggerPort>
-    <MtouchLink></MtouchLink>
-    <MtouchI18n></MtouchI18n>
+    <CodesignResourceRules>
+    </CodesignResourceRules>
+    <IOSDebuggerPort>
+    </IOSDebuggerPort>
+    <MtouchLink>
+    </MtouchLink>
+    <MtouchI18n>
+    </MtouchI18n>
     <CrashReportingDelay>-1</CrashReportingDelay>
-    <OptimizePNGs></OptimizePNGs>
-    <OnDemandResourcesInitialInstallTags></OnDemandResourcesInitialInstallTags>
-    <OnDemandResourcesPrefetchOrder></OnDemandResourcesPrefetchOrder>
-    <AssemblyName></AssemblyName>
-    <NoWarn></NoWarn>
+    <OptimizePNGs>
+    </OptimizePNGs>
+    <OnDemandResourcesInitialInstallTags>
+    </OnDemandResourcesInitialInstallTags>
+    <OnDemandResourcesPrefetchOrder>
+    </OnDemandResourcesPrefetchOrder>
+    <AssemblyName>
+    </AssemblyName>
+    <NoWarn>
+    </NoWarn>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
     <LangVersion>Default</LangVersion>
     <NoStdLib>false</NoStdLib>
-    <WarningsNotAsErrors></WarningsNotAsErrors>
+    <WarningsNotAsErrors>
+    </WarningsNotAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -124,12 +156,6 @@
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TodoREST\TodoREST.csproj">
-      <Project>{05A1AF58-41E1-4FFD-BB93-E8BA58BE5646}</Project>
-      <Name>TodoREST</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\Default.png" />
     <BundleResource Include="Resources\Default%402x.png" />
     <BundleResource Include="Resources\Default-568h%402x.png" />
@@ -163,6 +189,12 @@
   <ItemGroup>
     <ITunesArtwork Include="ITunesArtwork" />
     <ITunesArtwork Include="ITunesArtwork%402x" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TodoREST.Library\TodoREST.Library.NETStandard.2.1\TodoREST.Library.NETStandard.2.1.csproj">
+      <Project>{c15e744d-31dc-4467-8071-af2a3885ad0e}</Project>
+      <Name>TodoREST.Library.NETStandard.2.1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

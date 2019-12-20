@@ -53,12 +53,6 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TodoREST\TodoREST.csproj">
-      <Project>{05A1AF58-41E1-4FFD-BB93-E8BA58BE5646}</Project>
-      <Name>TodoREST</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,8 +63,10 @@
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\layout\" />
-    <Folder Include="Resources\values\" />
+    <ProjectReference Include="..\TodoREST.Library\TodoREST.Library.NETStandard.2.1\TodoREST.Library.NETStandard.2.1.csproj">
+      <Project>{c15e744d-31dc-4467-8071-af2a3885ad0e}</Project>
+      <Name>TodoREST.Library.NETStandard.2.1</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon.png" />

@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TodoREST\TodoREST.csproj" />
+    <ProjectReference Include="..\TodoREST.Library\TodoREST.Library.NETStandard.2.1\TodoREST.Library.NETStandard.2.1.csproj" />
   </ItemGroup>
 
 </Project>
