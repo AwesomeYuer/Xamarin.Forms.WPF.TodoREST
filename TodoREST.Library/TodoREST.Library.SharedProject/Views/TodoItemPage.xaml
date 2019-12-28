@@ -4,7 +4,7 @@
 			 x:Class="TodoREST.TodoItemPage" 
 			 Title="Todo">
 	<StackLayout Margin="20">
-		<Label Text="Name" />
+		<Label Text="Name姓名" />
 		<Entry Text="{Binding Path=Name}" 
                Placeholder="Enter item" />
 		<Label Text="Notes" />

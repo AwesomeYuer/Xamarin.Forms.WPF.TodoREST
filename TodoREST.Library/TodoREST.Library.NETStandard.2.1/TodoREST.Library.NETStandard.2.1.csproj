@@ -8,19 +8,7 @@
     <DebugType>full</DebugType>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Data\**" />
-    <Compile Remove="Models\**" />
-    <EmbeddedResource Remove="Data\**" />
-    <EmbeddedResource Remove="Models\**" />
-    <None Remove="Data\**" />
-    <None Remove="Models\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="Constants.cs" />
-    <Compile Remove="TodoREST.cs" />
-  </ItemGroup>
+ 
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
